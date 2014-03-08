@@ -1,4 +1,3 @@
-
 var assert = require('assert');
 var Metalsmith = require('metalsmith');
 var date = require('..');
@@ -10,7 +9,7 @@ describe('metalsmith-build-date', function(){
       .use(date())
       .build(function(err){
         if (err) return done(err);
-        assert(m.metadata().date instanceof Date);
+        assert(typeof m.metadata().date === 'string');
         done();
       });
   });
