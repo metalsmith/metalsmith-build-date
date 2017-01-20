@@ -25,4 +25,16 @@ describe('metalsmith-build-date', function(){
         done();
       });
   });
+
+  it('should add a build date as timestamp', function(done){
+    var m = Metalsmith('test/fixture');
+    m
+      .use(date())
+      .build(function(err){
+        if (err) return done(err);
+        console.log(typeof m.metadata().timestamp);
+        assert(typeof m.metadata().timestamp === 'string');
+        done();
+      });
+  });
 });
