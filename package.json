@@ -1,7 +1,7 @@
 {
   "name": "metalsmith-build-date",
-  "description": "A Metalsmith plugin that adds a build date to the metadata.",
-  "repository": "git://github.com/segmentio/metalsmith-build-date.git",
+  "description": "A Metalsmith plugin that adds a build date to the metadata, and also allows timezone to be added.",
+  "repository": "git://github.com/brianfidler/metalsmith-build-date-tz.git",
   "version": "0.2.0",
   "license": "MIT",
   "main": "lib/index.js",

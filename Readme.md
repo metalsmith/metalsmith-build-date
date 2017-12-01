@@ -1,16 +1,16 @@
 
-# metalsmith-build-date
+# metalsmith-build-date-tz
 
   A Metalsmith plugin that adds a build date to the metadata. Useful for `atom.xml` or other feeds.
 
 ## Installation
 
-    $ npm install metalsmith-build-date
+    $ npm install https://github.com/brianfidler/metalsmith-build-date-tz.git
 
 ## Usage
 
 ```js
-var date = require('metalsmith-build-date');
+var date = require('metalsmith-build-date-tz');
 
 metalsmith.use(date());
 ```
@@ -39,12 +39,12 @@ metalsmith.use(date({ key: 'dateBuilt' ));
 
 ## CLI Usage
 
-  Install via npm and then add the `metalsmith-build-date` key to your `metalsmith.json`:
+  Install via npm and then add the `metalsmith-build-date-tz` key to your `metalsmith.json`:
 
 ```json
 {
   "plugins": {
-    "metalsmith-build-date": true
+    "metalsmith-build-date-tz": true
   }
 }
 ```
