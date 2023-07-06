@@ -1,3 +1,7 @@
+# This metalsmith plugin has been retired.
+Functionality it provides is trivial to add yourself through `metalsmith.metadata({ date: new Date() })`
+
+---
 
 # metalsmith-build-date
 
